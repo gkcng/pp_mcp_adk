@@ -1,0 +1,21 @@
+[project]
+name = "paypal-mcp-agent"
+version = "0.1.0"
+description = "A Customer Service Representative (CSR) at a mid-size merchant (\"GlobalGoods Inc.\") uses an internal AI agent (powered by Gemini and the PayPal Agentic Toolkit, built by a developer like \"Maria\") to resolve a customer's order inquiry involving both payment and shipment status, and potentially initiate a follow-up action."
+authors = [
+    {name = "Turan Bulmus",email = "turan.bulmus@google.com"},
+    {name = "Mike Styer",email = "styer@google.com"},    
+    {name = "Gary Ng",email = "gkcng@google.com"}    
+]
+license = {text = "Apache License 2.0"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk (>=0.3.0)",
+    "google-cloud-aiplatform (>=1.90.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
