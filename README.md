@@ -47,7 +47,7 @@ Here are a list of API interdependencies and operational matters:
 - Create order returns a payment URL for the human to log in and pay manually.
 - Calling order capture will only be successful once the consumer has completed the transaction.
 - A human must create a dispute first in the sandbox environment before a merchant can call accept dispute claim.
-- A subcription can only be created if there is a previously created product and a subscription plan.
+- A subscription can only be created if there is a previously created product and a subscription plan.
 - There is a delay in list_transactions showing the latest.
 
 
@@ -82,7 +82,7 @@ They are loaded during `before_agent_callback`.
 
 # Run ADK Developer UI
 
-1. Run `adk web`, in the working directory `MCP_ADK_INTEGRATION`, where the `.env` file is.
+1. Run `adk web`, in the working directory `pp_mcp_adk`, where the `.env` file is.
 2. It will display `INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)`
 3. Point your browser to http://localhost:8000/dev-ui?app=paypal_mcp_agent
 
