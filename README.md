@@ -53,8 +53,8 @@ Here are a list of API interdependencies and operational matters:
 
 # Set up
 
-## Packages
-Requires Google adk 0.3.0+:
+## Python Packages
+Requires Google ADK 0.3.0+:
 ```
 python3 -m venv ~/.ppmcp_adk
 source ~/.ppmcp_adk/bin/activate
@@ -66,6 +66,19 @@ or if poetry is preferred:
 
 ```
 poetry install
+```
+
+## For the MCP Client
+Set up nodejs and npx from Node.js [website](https://nodejs.org/en/download)
+
+Making sure you have something similar, that node and npx are in your PATHs:
+
+```
+$ which node
+/Users/USERNAME/.nvm/versions/node/v22.14.0/bin/node
+
+$ which npx
+/Users/USERNAME/.nvm/versions/node/v22.14.0/bin/npx
 ```
 
 ## Configuration
